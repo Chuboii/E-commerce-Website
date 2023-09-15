@@ -1,10 +1,11 @@
 .box-container{
     display: flex;
    flex-grow:1 ;
+   width: 350px;
         .box{
             border-radius: 6px;
             position: relative;
-            width: 400px;
+   
             flex-grow: 1;
             transition: all .3s;
             overflow: hidden;
@@ -21,7 +22,7 @@
                 object-position: top;
                 height: 100%;
                 transition: all 3s;
-
+                filter: brightness(.8);
                 &:hover{
                     transform: scale(1.1);
                 }

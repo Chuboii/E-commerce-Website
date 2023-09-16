@@ -12,12 +12,12 @@ let setActive = () =>{
     return(
         <>
         <header>
-        <img className="logo" src={logo}/>
+        <Link to={'/'}><img className="logo" src={logo}/></Link>
         <button onClick={setActive}>Bars</button>
         <nav className={isActive ? "active" : ''}>
         <Link to={'shop'}>Shop</Link>
         <Link to={'contact'}>contact</Link>
-        <Link to={'signIn'}>sign in</Link>
+        <Link to={'signup'}>sign in</Link>
         </nav>
         </header>
         <Outlet/>

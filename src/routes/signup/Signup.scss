@@ -1,5 +1,5 @@
 
-@media screen and (min-width:0) and (max-width:800px) {
+@media screen and (min-width:0) and (max-width:700px) {
     form{
         margin-top: 7rem;
         display: flex;
@@ -75,7 +75,7 @@
 
 
 @media screen and (min-width:700px){
-    .form{
+    form{
         margin-top: 7rem;
     width: 50%;
         position: absolute;
@@ -86,7 +86,7 @@
        padding:3rem 2rem;
        border-radius: 7px;
        margin-bottom: 5rem;
-       height: 60dvh;
+       height: 80dvh;
        .img{
         margin: 0 2rem;
         img{
@@ -97,7 +97,7 @@
         }
        }
        .items{
-        margin-top: 3rem;
+        margin-top: 1rem;
         width: 100%;
         margin-right: 3rem;
         div{
@@ -161,6 +161,5 @@
         display: block;
         text-decoration: none;
         margin-top: 1rem;
-        color: blue;
     }
 }

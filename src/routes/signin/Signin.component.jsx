@@ -7,11 +7,12 @@ import Err from "../../components/alert/Err.component";
 import { useState } from "react"
 
 export default function Signin() {
-let {register, handleSubmit, formState:{errors}} = useForm({
+let {register, handleSubmit, formState:{errors}, reset} = useForm({
     mode:"onChange"
 })
 let [isErr, setIsErr] = useState(false)
 let [errText, setErrText] = useState("")
+
 
 let registerOptions ={
     email:{
@@ -35,14 +36,15 @@ let googleBtn = async () =>{
 }
 let submitForm = async (data) =>{
 try{
-    let {user} = await signInUserWithEandP(auth, data.email, data.password)
-    
+ await signInUserWithEandP(auth, data.email, data.password)
+    reset()
 }
 catch(e){
     if(e.code === 'auth/invalid-login-credentials'){
        setIsErr(true)
        setErrText("Invalid Email or Password")
     }
+ reset()   
 }
 }
 let text =  `Don't have an account? Register`

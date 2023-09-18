@@ -42,7 +42,7 @@ header{
         opacity: 1;
         display: block;
      }  
-        a{
+        a, .logout-btn{
             color: blue;
             text-decoration: none;
             display: block;
@@ -87,8 +87,8 @@ header{
         nav{
             margin:0 2rem;
     
-            a{
-                color: blue($color: #000000);
+            a, .logout-btn{
+                color: blue;
                 margin: 0 1rem;
                 border: 2px solid blue($color: #000000);
                 text-decoration: none;

@@ -52,8 +52,7 @@ let registerOptions = {
 }
 
 let googleBtn = async () => {
-    let {user} = await userSignInWithGoogle()
-    await createUserDoc(user)
+ await userSignInWithGoogle()
 }
 
 let submitForm = async (data) =>{

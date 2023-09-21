@@ -4,13 +4,15 @@ import './Navigation.scss'
 import { useContext, useState } from "react";
 import { UserContext } from "../../contexts/Users.context";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
+import Cart from "../../components/cart dropdown/Cart";
+import { CartContext } from "../../contexts/CartContext";
 
 
 export default function Navigation(){
-let [isActive, setIsActive] = useState(false)
+
+    let [isActive, setIsActive] = useState(false)
 let {currentUser} = useContext(UserContext)
-
-
+let {toggleCart, setToggleCart, cartCount} = useContext(CartContext)
 
 let setActive = () =>{
   setIsActive(!isActive)
@@ -21,17 +23,24 @@ await signOutUser()
 
 }
 
+let toggleCartBtn = () =>{
+setToggleCart(!toggleCart)
+}
+
     return(
         <>
-        <header>
+        {toggleCart && <Cart/>}
+        <header className="nav-header">
         <Link to={'/'}><img className="logo" src={logo}/></Link>
-        <button onClick={setActive}>Bars</button>
+        <button className="nav-btn" onClick={setActive}>Bars</button>
         <nav className={isActive ? "active" : ''}>
         <Link to={'shop'}>Shop</Link>
         <Link to={'contact'}>contact</Link>
         {currentUser ? <span className="logout-btn" onClick={signoutFunc}>Log out</span> :
         <Link to={'signup'}>Sign in</Link>
     }
+    <button className="cart-btn" onClick={toggleCartBtn}>CART {cartCount}</button>
+
         </nav>
         </header>
         <Outlet/>

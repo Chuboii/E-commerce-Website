@@ -1,5 +1,5 @@
 @media screen and (min-width:0) and (max-width:700px){
-header{
+.nav-header{
     display: flex;
     justify-content: space-between;
     padding:1.4rem  1rem;
@@ -59,12 +59,36 @@ header{
                 color: white;
                 filter: brightness(.8);
             }
+            
+        }
+        
+        .cart-btn{
+            width: 100%;
+            color: blue;
+            text-decoration: none;
+            display: block;
+            box-shadow: 0 0 10px 0 rgba($color: #000000, $alpha: .5);
+            padding: 1rem;
+            background-color: white;
+            text-transform: uppercase;
+            border: none;
+            font-size: 14px;
+            text-align: left;
+            border-radius: 5px;
+            margin: .5rem 0;
+            transition: all .5s;
+
+            &:hover{
+                background-color: blue;
+                color: white;
+                filter: brightness(.8);
+            }
         }
     }
 }
 }
 @media screen and (min-width:700px) {
-    header{
+    .nav-header{
         display: flex;
         justify-content: space-between;
         padding: 1rem;
@@ -81,7 +105,7 @@ header{
         mix-blend-mode:hard-light;
         }
     
-        button{
+        .nav-btn{
             display: none;
         }
         nav{
@@ -103,6 +127,26 @@ header{
                     filter: brightness(.8);
                 }
             }
+
+            .cart-btn{
+                color: blue;
+                margin: 0 1rem;
+                border: 2px solid blue($color: #000000);
+                text-decoration: none;
+                background-color: white;
+                padding:.8rem 2rem;
+                text-transform: uppercase;
+                font-size: 14px;
+                border-radius: 5px;
+
+                &:hover{
+                    background-color: blue;
+                    color: white;
+                    filter: brightness(.8);
+                }
+            }
+            
+
         }
     }
 }

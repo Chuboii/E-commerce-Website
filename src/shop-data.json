@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "name": "Crotchet Brim",
+    "imageUrl": "/src/assets/hat images/hat12.jpg",
+    "price": 25,
+    "isClicked":false
+  },
+  {
+    "id": 1,
+    "name": "Brown Brim",
+    "imageUrl": "/src/assets/hat images/bluehat.jpg",
+    "price": 25,
+    "isClicked":false
+  },
+  {
+    "id": 2,
+    "name": "Blue Beanie",
+    "imageUrl": "/src/assets/hat images/brown hat.jpg",
+    "price": 18,
+    "isClicked":false
+  },
+  {
+    "id": 3,
+    "name": "Brown Cowboy",
+    "imageUrl": "/src/assets/hat images/crotcheted hat.jpg",
+    "price": 35,
+    "isClicked":false
+  },
+  {
+    "id": 4,
+    "name": "Grey Brim",
+    "imageUrl": "/src/assets/hat images/hat5.jpg",
+    "price": 25,
+    "isClicked":false
+  },
+  {
+    "id": 5,
+    "name": "Green Beanie",
+    "imageUrl": "/src/assets/hat images/hat6.jpg",
+    "price": 18,
+    "isClicked":false
+  },
+  {
+    "id": 6,
+    "name": "Palm Tree Cap",
+    "imageUrl": "/src/assets/hat images/hat7.jpg",
+    "price": 14,
+    "isClicked":false
+  },
+  {
+    "id": 7,
+    "name": "Red Beanie",
+    "imageUrl": "/src/assets/hat images/hat8.jpg",
+    "price": 18,
+    "isClicked":false
+  },
+  {
+    "id": 8,
+    "name": "Wolf Cap",
+    "imageUrl": "/src/assets/hat images/hat9.jpg",
+    "price": 14,
+    "isClicked":false
+  },
+  {
+    "id": 9,
+    "name": "Blue Snapback",
+    "imageUrl": "/src/assets/hat images/hat10.jpg",
+    "price": 16,
+    "isClicked":false
+  }
+]
